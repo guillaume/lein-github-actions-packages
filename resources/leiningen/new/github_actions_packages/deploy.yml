@@ -1,3 +1,5 @@
+{{! Change mustache delimiter to <% and %> }}
+{{=<% %>=}}
 name: Deploys to GitHub Packages
 on:
   push:
@@ -12,3 +14,5 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: lein deploy github
+<%! Reset mustache delimiter %>
+<%={{ }}=%>
