@@ -6,10 +6,10 @@
 
 (defn github-actions-packages
   [name]
-  (let [data {:raw-name name
-              :name (project-name name)
-              :namespace (sanitize-ns name)
-              :sanitized (name-to-path name)}]
+  (let [data {:raw-name name ; organization/project
+              :name (project-name name) ; project
+              :namespace (sanitize-ns name) ; organization.project
+              :sanitized (name-to-path name)}] ; organization/project
     (main/info "Generating fresh 'lein new' github-actions-packages.")
     (->files data
              [".github/workflows/clojure.yml" (render "clojure.yml" data)]

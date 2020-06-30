@@ -1,6 +1,6 @@
 (defproject {{raw-name}} "0.1.0-SNAPSHOT"
             :description "FIXME: write description"
-            :url "http://github.com/org-name/{{raw-name}}"
+            :url "http://github.com/{{raw-name}}"
 
             :dependencies [[org.clojure/clojure "1.10.1"]]
 
@@ -12,7 +12,7 @@
                             ["vcs" "commit"]
                             ["vcs" "push"]]
 
-            :repositories [["github" {:url "https://maven.pkg.github.com/org-name/{{raw-name}}"
+            :repositories [["github" {:url "https://maven.pkg.github.com/{{raw-name}}"
                                       :username :env/github_actor
                                       :password :env/github_token
                                       :sign-releases false}]])
