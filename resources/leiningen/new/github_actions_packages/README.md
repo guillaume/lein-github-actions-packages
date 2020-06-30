@@ -1,6 +1,6 @@
-# {{raw-name}}
+# {{name}}
 
-A library for {{raw-name}}...
+A library for name...
 
 ## Test
 
@@ -19,6 +19,16 @@ Deployments are automatically deployed to [github packages](https://github.com/{
 
 To trigger a release version increase in the project
 ```
-    $ lein release
+lein release
 ```
 
+## Require this lib
+
+To include this library in a dependent project, include the following
+
+```clojure
+:repositories [["{{raw-name}}"
+                {:url "https://maven.pkg.github.com/{{raw-name}}"
+                 :username [:gpg :env/github_actor]
+                 :password [:gpg :env/github_token]}]]
+``` 
