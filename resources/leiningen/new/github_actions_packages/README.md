@@ -1,13 +1,13 @@
 # {{name}}
 
-A library for name...
+A library for {{name}}...
 
 ## Test
 
 ```sh
 lein test
 ```
-PR checks are handles by github action 
+PR checks are handled by github action 
 
 ## Deployment
 

@@ -10,7 +10,7 @@
               :name (project-name name) ; project
               :namespace (sanitize-ns name) ; organization.project
               :sanitized (name-to-path name)}] ; organization/project
-    (main/info "Generating fresh 'lein new' github-actions-packages.")
+    (main/info "Generating fresh 'lein new' github-actions-packages in" (project-name name))
     (->files data
              [".github/workflows/clojure.yml" (render "clojure.yml" data)]
              [".github/workflows/deploy.yml" (render "deploy.yml" data)]

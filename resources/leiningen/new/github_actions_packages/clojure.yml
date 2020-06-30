@@ -1,4 +1,4 @@
-name: Clojure CI
+name: Run lein test
 on:
   push:
     branches: [ master ]
