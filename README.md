@@ -13,3 +13,5 @@ Use the fully qualified name including the username/organization of your repo
 lein new github-actions-packages username/project
 ```
 
+The first thing you should do is open a PR to fix the tests in this repo to
+ get the first green build of the project. See `core_test.clj`
