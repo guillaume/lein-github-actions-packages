@@ -1,4 +1,4 @@
-(defproject github-actions-packages/lein-template "0.0.1"
+(defproject github-actions-packages/lein-template "0.0.3"
   :description "A leiningen template for deploying a clojure library to a github packages repo"
   :url "https://github.com/guillaume/github-actions-packages"
   :license {:name "Eclipse"
